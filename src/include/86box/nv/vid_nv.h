@@ -54,6 +54,7 @@ void nv_log(const char *fmt, ...);
 #define PCI_DEVICE_NV3          0x0018  // Nvidia NV3 (Riva 128)
 #define PCI_DEVICE_NV3T         0x0019  // Nvidia NV3T (Riva 128 ZX)
 #define PCI_DEVICE_NV4          0x0020  // Nvidia NV4 (RIVA TNT)
+#define PCI_DEVICE_NV5          0x002D  // Nvidia NV5 (RIVA TNT2 Model 64)
 
 #define CHIP_REVISION_NV1_A0    0x0000
 #define CHIP_REVISION_NV1_B0    0x0010
@@ -63,10 +64,15 @@ void nv_log(const char *fmt, ...);
 #define CHIP_REVISION_NV3_B0    0x0010  // October 1997
 #define CHIP_REVISION_NV3_C0    0x0020  // 1998
 
+#define CHIP_REVISION_NV5_A0    0x4000
+#define CHIP_REVISION_NV5_B0    0x4010
+#define CHIP_REVISION_NV5_C0    0x4020
+
 // Architecture IDs
 #define NV_ARCHITECTURE_NV1     1
 #define NV_ARCHITECTURE_NV2     2
 #define NV_ARCHITECTURE_NV3     3
+#define NV_ARCHITECTURE_NV5     5
 
 
 typedef enum nv_bus_generation_e
@@ -84,6 +90,9 @@ typedef enum nv_bus_generation_e
     // NV3T
     // NV4
     nv_bus_agp_2x = 3,
+
+    // NV5
+    nv_bus_agp_4x = 4,
 
 } nv_bus_generation;
 
