@@ -43,6 +43,21 @@ add_library(vid OBJECT agpgart.c video.c vid_table.c vid_cga.c vid_cga_comp.c
     nv/nv3/subsystems/nv3_pvideo.c
 
     nv/nv3/classes/nv3_class_names.c
+
+    nv/nv5/nv5_core.c nv/nv5/nv5_core_config.c nv/nv5/nv5_core_arbiter.c  
+    nv/nv5/subsystems/nv5_pramdac.c 
+    nv/nv5/subsystems/nv5_pfifo.c
+    nv/nv5/subsystems/nv5_pgraph.c 
+    nv/nv5/subsystems/nv5_pmc.c 
+    nv/nv5/subsystems/nv5_pme.c
+    nv/nv5/subsystems/nv5_pextdev.c
+    nv/nv5/subsystems/nv5_pfb.c
+    nv/nv5/subsystems/nv5_pbus.c nv/nv5/subsystems/nv5_pbus_dma.c
+    nv/nv5/subsystems/nv5_ptimer.c
+    nv/nv5/subsystems/nv5_pramin.c nv/nv5/subsystems/nv5_pramin_ramht.c nv/nv5/subsystems/nv5_pramin_ramfc.c nv/nv5/subsystems/nv5_pramin_ramro.c 
+    nv/nv5/subsystems/nv5_pvideo.c
+
+    nv/nv5/classes/nv5_class_names.c
     )
 
 if(G100)
